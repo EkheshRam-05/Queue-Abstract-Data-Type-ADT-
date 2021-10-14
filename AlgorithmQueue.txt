@@ -1,0 +1,86 @@
+Algorithm to Implement Queue Abstract Data Type with Linked List using pointers
+
+
+Algorithm:
+
+
+Step 1: Include Header Files
+
+
+Step 2: Declare the Queue, Functions and variables
+
+
+Step 3: Inside Main function ask for the choice by prompting,
+	1.Enqueue
+	2.Dequeue
+	3.Print
+	(0 to exit)
+	Enter Your Choice:
+
+
+Step 4: If choice is 1:
+	4.1: call the Enqueue Function (goto Step 8)
+
+
+Step 5: If choice is 2:
+	5.1: call the Dequeue Function (goto Step 9)
+
+
+Step 6: If choice is 3:
+	6.1: call the Print Function (goto Step 10)
+
+
+Step 7: If choice is 0:
+	7.1: exit the Program
+
+
+Step 8: Implementation of Enqueue Function
+	8.1: Get the element to Enqueue
+
+	8.2: check if the Queue is empty
+		if empty:
+			1.update element as first Queue element
+			3.exit the function
+		else:
+			1.continue with the Enqueue function
+
+	8.3: use while loop to itteration through Queue
+		if the curent node's next field is NULL
+			1.set the new node data field to the data given by the user in the step 8.1
+			2.set current node's next field to new node
+			3.set new node's next field to NULL
+			4.exit the function
+		else:
+			1.goto the next node
+
+	8.4: exit the function
+	
+
+
+Step 9: Implementation of Dequeue Function
+
+	9.1: check if the Queue is empty
+		if empty:
+			1.display Queue is empty
+			2.exit function
+		else:
+			1.continue with the Dequeue function
+
+	9.2: point the head pointer to the next field of the curent head node
+	9.3: exit the function
+
+
+Step 10: Implementation of Print function
+
+	10.1: check if the Queue is empty
+		if empty:
+			1.display Queue is empty
+			2.exit function
+		else:
+			1.continue with the Print function
+
+	10.2: use while loop to itteration through Queue
+		1.print the element
+		2.goto the next node
+
+	10.3: exit the function
